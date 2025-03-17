@@ -85,6 +85,9 @@ function processCommand(k) {
     else if(j === "help") {
         help();
     }
+    else if(j === "nuke") {
+        nuke();
+    }
     else {
         document.getElementById("window").innerHTML += ("<span class='error'>!ERROR cratesAndBarrels: Could not find command '" + k.substring(20) + "'</span><br>");
     }
@@ -331,16 +334,24 @@ function scan() {
     }
 }
 
+function nuke() {
+    localStorage.clear();
+    document.getElementById("window").innerHTML += ("<span class='red'>**All containers destroyed**</span><br>");
+}
+
 function help() {
     document.getElementById("window").innerHTML += ("-=-=-=-=-=-=-=-=-<br>");
     document.getElementById("window").innerHTML += ("<br>Current available container types:<br> - barrel<br><br>");
     document.getElementById("window").innerHTML += ("help: Guide on all commands<br>");
+    document.getElementById("window").innerHTML += ("help: Go to terminalcraft website<br>");
     document.getElementById("window").innerHTML += ("scan: Lists all containers<br>");
+    document.getElementById("window").innerHTML += ("read [container_type] [name]: Prints the value of the container<br>");
     document.getElementById("window").innerHTML += ("new [container_type] [name]: Creates new container<br>");
     document.getElementById("window").innerHTML += ("destroy [container_type] [name]: Removes container<br>");
     document.getElementById("window").innerHTML += ("++ [container_type] [name]: Adds +1 to container and creates if not existent<br>");
     document.getElementById("window").innerHTML += ("+=[number] [container_type] [name]: Adds number to container and creates if not existent<br>");
     document.getElementById("window").innerHTML += ("-=[number] [container_type] [name]: Subtracts number from container and creates if not existent<br>");
+    document.getElementById("window").innerHTML += ("nuke: Destroys all containers<br><br>");
     document.getElementById("window").innerHTML += ("-=-=-=-=-=-=-=-=-<br>");
 }
 
