@@ -1,0 +1,51 @@
+body {
+    background-color: rgb(33, 33, 33);
+}
+
+#window {
+    background-color: black;
+    color: white;
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    margin: 0;
+    padding: 20px;
+    font-weight: 200;
+    font-family: Monospace, 'Courier New', Courier;
+    white-space: pre-wrap;
+}
+
+#windowTOP {
+    background-color: rgb(73, 73, 73);
+    color: rgb(188, 188, 188);
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+    text-align: center;
+    font-family: monospace;
+    font-weight: 100;
+    font-size: small;
+    padding: 7px;
+    margin: 0;
+}
+
+input {
+    margin: 0 auto;
+    display: block;
+    margin-top: 20px;
+    background-color: black;
+    padding: 30px;
+    color: white;
+    font-family: monospace;
+    font-weight: 100;
+    border-radius: 10px;
+    width: 90%;
+    white-space: pre-wrap;
+    font-size: medium;
+}
+
+
+span.error{
+    color: red;
+}
+span.red{
+    color: rgb(167, 122, 122);
+}
