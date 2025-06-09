@@ -343,7 +343,7 @@ function help() {
     document.getElementById("window").innerHTML += ("-=-=-=-=-=-=-=-=-<br>");
     document.getElementById("window").innerHTML += ("<br>Current available container types:<br> - barrel<br><br>");
     document.getElementById("window").innerHTML += ("help: Guide on all commands<br>");
-    document.getElementById("window").innerHTML += ("help: Go to terminalcraft website<br>");
+    document.getElementById("window").innerHTML += ("home: Go to terminalcraft website<br>");
     document.getElementById("window").innerHTML += ("scan: Lists all containers<br>");
     document.getElementById("window").innerHTML += ("read [container_type] [name]: Prints the value of the container<br>");
     document.getElementById("window").innerHTML += ("new [container_type] [name]: Creates new container<br>");
